@@ -1,0 +1,5 @@
+modelo     | num_ctx | tokens que el modelo realmente leyó
+qwen-demo  |     512 | 1565
+qwen-demo  |    8192 | 1565
+phi-demo   |     512 | 16
+phi-demo   |    8192 | 1547

@@ -1,0 +1,9 @@
+Modelo: qwen3.5:4b
+
+  [v1] falló: «No alcancé a recoger mi pedido, ¿me van a devolver la plata?» -> RECLAMO (esperado CONSULTA)
+  [v1] falló: «Ya no quiero el sándwich, mejor cámbienmelo por una arepa.» -> PEDIDO (esperado CANCELACION)
+v1: 8/10
+
+  [v2] falló: «No alcancé a recoger mi pedido, ¿me van a devolver la plata?» -> RECLAMO (esperado CONSULTA)
+v2: 9/10
+

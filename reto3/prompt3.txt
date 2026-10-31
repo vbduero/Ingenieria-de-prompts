@@ -1,0 +1,18 @@
+A partir de estos criterios de aceptación de CafeFET, escribe una tabla Markdown de casos de prueba con exactamente estas columnas:
+| Caso | Entrada | Resultado esperado | Criterio que cubre |
+Cada caso debe tener datos concretos en la entrada (día, hora, cantidad de productos, saldo, precios).
+Antes de entregar, revisa que cada criterio tenga al menos un caso; si falta, agrégalo e indica cuál agregaste.
+Responde solo con la tabla y, debajo, la línea de verificación.
+
+<criterios>
+CA1. Dado que soy un estudiante registrado en CafeFET, Cuando intento realizar un pedido anticipado, Entonces el sistema me muestra únicamente los productos disponibles y no permite seleccionar aquellos agotados.
+
+CA2. Dado que estoy realizando un pedido anticipado, Cuando añado más de 5 productos a mi carrito, Entonces el sistema bloquea la finalización del pedido y me indica el límite máximo permitido.
+
+CA3. Dado que tengo saldo en mi carné, Cuando procedo al pago de un pedido anticipado, Entonces se descuenta el importe correspondiente sin permitir que mi saldo quede negativo.
+
+CA4. Dado que estoy dentro del horario de atención (lunes a sábado de 7:00 a 18:00), Cuando intento realizar un pedido fuera de este periodo, Entonces el sistema me notifica que no se aceptan pedidos en ese momento.
+
+CA5. Dado que he realizado un pedido anticipado, Cuando pase 30 minutos sin recogerlo, Entonces el sistema cancela automáticamente el pedido y devuelve el saldo a mi carné.
+
+</criterios>

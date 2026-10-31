@@ -1,0 +1,15 @@
+Modelo: qwen3.5:0.8b
+
+  [v1] falló: «Me descontaron el saldo dos veces por el mismo almuerzo.» -> PEDIDO (esperado RECLAMO)
+  [v1] falló: «¿Hasta qué hora reciben pedidos los sábados?» -> PEDIDO (esperado CONSULTA)
+  [v1] falló: «Pedí 3 buñuelos y me entregaron 2.» -> PEDIDO (esperado RECLAMO)
+  [v1] falló: «No alcancé a recoger mi pedido, ¿me van a devolver la plata?» -> PEDIDO (esperado CONSULTA)
+  [v1] falló: «¿Por qué me rechazan el pedido si tengo saldo?» -> PEDIDO (esperado RECLAMO)
+  [v1] falló: «Ya no quiero el sándwich, mejor cámbienmelo por una arepa.» -> PEDIDO (esperado CANCELACION)
+v1: 4/10
+
+  [v2] falló: «Pedí 3 buñuelos y me entregaron 2.» -> PEDIDO (esperado RECLAMO)
+  [v2] falló: «No alcancé a recoger mi pedido, ¿me van a devolver la plata?» -> RECLAMO (esperado CONSULTA)
+  [v2] falló: «Ya no quiero el sándwich, mejor cámbienmelo por una arepa.» -> RECLAMO (esperado CANCELACION)
+v2: 7/10
+

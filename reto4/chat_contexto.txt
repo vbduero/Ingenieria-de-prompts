@@ -1,0 +1,19 @@
+RETO 4 · PARTE B · LA INSTRUCCIÓN QUE SE OLVIDA (CafeFET)
+Escribir cada línea dentro del chat de Ollama, una por una.
+
+=== VERSIÓN A · la regla como mensaje del chat ===
+
+ollama run qwen-demo --think=false
+
+/set parameter num_ctx 512
+Regla: empieza SIEMPRE tu respuesta con «CafeFET responde:». ¿Entendido?
+Explica en al menos 400 palabras cómo funciona el pago de un pedido de CafeFET con el saldo del carné y por qué el saldo nunca puede quedar negativo.
+Explica en al menos 400 palabras qué pasa en CafeFET cuando un estudiante no recoge su pedido en 30 minutos.
+
+=== VERSIÓN B · la misma regla como system prompt ===
+
+/clear
+/set system Empieza SIEMPRE tu respuesta con «CafeFET responde:».
+Explica en al menos 400 palabras cómo funciona el pago de un pedido de CafeFET con el saldo del carné y por qué el saldo nunca puede quedar negativo.
+Explica en al menos 400 palabras qué pasa en CafeFET cuando un estudiante no recoge su pedido en 30 minutos.
+/bye

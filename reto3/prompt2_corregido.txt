@@ -1,0 +1,20 @@
+Escribe entre 3 y 5 criterios de aceptación en formato Dado / Cuando / Entonces para esta historia de usuario de CafeFET, el sistema de pedidos anticipados de la cafetería de la FET.
+
+<historia>
+Como estudiante, quiero poder repetir mi último pedido con un solo clic, para agilizar la realización de mis compras y ahorrar tiempo.
+
+</historia>
+
+Reglas de negocio de CafeFET (son las únicas que existen; no inventes otras):
+<reglas>
+- Se reciben pedidos de lunes a sábado, de 7:00 a 18:00.
+- Máximo 5 productos por pedido.
+- Se paga con el saldo del carné; el saldo nunca puede quedar negativo.
+- Los productos agotados no se pueden pedir.
+- Si el pedido no se recoge en 30 minutos, se cancela y se devuelve el saldo.
+</reglas>
+
+Instrucciones:
+- Todos los criterios deben tratar sobre la acción de la historia: repetir el último pedido. No escribas criterios sobre hacer un pedido normal.
+- Incluye un criterio para el caso exitoso y criterios para lo que pasa al repetir el pedido cuando alguna regla de negocio lo impide (por ejemplo, el saldo actual ya no alcanza o un producto del último pedido ahora está agotado).
+- Numera los criterios (CA1, CA2…) y escribe cada uno en tres líneas separadas: Dado…, Cuando…, Entonces…

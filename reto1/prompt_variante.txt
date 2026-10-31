@@ -1,0 +1,12 @@
+[QUÉ QUIERO] Escribe la función crear_pedido(estudiante, productos, fecha_hora) en Python 3.12.
+[PARA QUIÉN] La usará el backend de CafeFET (sistema de pedidos anticipados a la cafetería de la FET) y la mantendrán desarrolladores junior.
+[CONTEXTO] El pedido solo se crea si cumple todas estas reglas de negocio:
+<reglas>
+- Se reciben pedidos de lunes a sábado, de 7:00 a 18:00 (18:00 en punto es la última hora válida).
+- Máximo 5 productos por pedido, y al menos 1.
+- Se paga con el saldo del carné (estudiante.saldo); el saldo nunca puede quedar negativo.
+- Los productos agotados (producto.agotado == True) no se pueden pedir.
+- Si el pedido no se recoge en 30 minutos, se cancela y se devuelve el saldo.
+</reglas>
+Cada producto tiene los atributos nombre, precio y agotado. fecha_hora es un datetime.
+[FORMATO] Devuelve solo el código, con type hints y docstring. La función retorna una tupla (bool, motivo): motivo explica el rechazo o es "OK". Si el pedido es válido, descuenta el total de estudiante.saldo y deja calculada hora_limite_recogida = fecha_hora + 30 minutos.

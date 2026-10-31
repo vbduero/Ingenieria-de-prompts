@@ -1,0 +1,18 @@
+Mensaje: Hola, para las 10:30 quiero 2 empanadas y un tinto, porfa.
+  accion=nuevo | productos=[2 x empanadas, 1 x tinto] | hora=10:30 | para_llevar=None | obs=None
+
+Mensaje: Me separan un jugo de mora sin azúcar y 3 pandebonos para llevar? Paso a las 12 y media.
+  accion=nuevo | productos=[1 x jugo de mora sin azúcar, 3 x pandebono] | hora=12:30 | para_llevar=True | obs=None
+
+Mensaje: Ya no quiero el pedido de las 3 de la tarde, cancélenlo por favor.
+  accion=cancelar | productos=[(ninguno)] | hora=None | para_llevar=None | obs=None
+
+Mensaje: Cambien el capuchino de mi pedido por un chocolate caliente, lo demás igual. Lo recojo a las 4.
+  accion=modificar | productos=[1 x chocolate caliente] | hora=16:00 | para_llevar=None | obs=None
+
+Mensaje: Quiero lo mismo de siempre.
+  accion=nuevo | productos=[(ninguno)] | hora=None | para_llevar=None | obs=None
+
+Mensaje: Un almuerzo y unos buñuelos para más tarde.
+  accion=nuevo | productos=[1 x almuerzo, 1 x buñuelos] | hora=None | para_llevar=None | obs=para más tarde
+

@@ -1,0 +1,24 @@
+
+== salida_nuevo.md
+  Válido: martes 10:00, 2 productos, saldo 10000 -> (True, 'OK')  saldo final=6000
+  Lunes 10:00 (válido)                       -> (True, 'OK')  saldo final=8000
+  Domingo 10:00 (inválido)                   -> (True, 'OK')  saldo final=8000
+  18:00 en punto (válido)                    -> (False, 'Horario inválido')  saldo final=10000
+  18:45 (inválido)                           -> (False, 'Horario inválido')  saldo final=10000
+  6 productos (inválido)                     -> (False, 'Cantidad inválida')  saldo final=100000
+  0 productos (inválido)                     -> (False, 'Cantidad inválida')  saldo final=10000
+  Saldo exacto 4000, total 4000 (válido)     -> (True, 'OK')  saldo final=0
+  Saldo 3000, total 4000 (inválido)          -> (False, 'Saldo insuficiente')  saldo final=3000
+  Producto agotado (inválido)                -> (False, 'Productos agotados')  saldo final=10000
+
+== salida_variante.md
+  Válido: martes 10:00, 2 productos, saldo 10000 -> None  saldo final=6000
+  Lunes 10:00 (válido)                       -> (False, 'El pedido solo se acepta de lunes a sábado.')  saldo final=10000
+  Domingo 10:00 (inválido)                   -> (False, 'El pedido solo se acepta de lunes a sábado.')  saldo final=10000
+  18:00 en punto (válido)                    -> None  saldo final=8000
+  18:45 (inválido)                           -> None  saldo final=8000
+  6 productos (inválido)                     -> (False, 'El pedido no puede contener más de 5 productos.')  saldo final=100000
+  0 productos (inválido)                     -> (False, 'Se requiere al menos un producto en el pedido.')  saldo final=10000
+  Saldo exacto 4000, total 4000 (válido)     -> None  saldo final=0
+  Saldo 3000, total 4000 (inválido)          -> (False, 'Saldo insuficiente. Necesitas 4000€, tienes 3000€.')  saldo final=3000
+  Producto agotado (inválido)                -> (False, "El producto 'x' está agotado.")  saldo final=10000

@@ -1,0 +1,11 @@
+Convierte pedidos del administrador de la cafetería en historias de usuario de CafeFET, el sistema de pedidos anticipados de la cafetería de la FET.
+Responde solo con la historia, en una línea, con el formato «Como…, quiero…, para…».
+
+Pedido: "Que el estudiante vea cuánto saldo le queda antes de pedir"
+Historia: Como estudiante, quiero ver el saldo de mi carné antes de confirmar un pedido, para no intentar pagar algo que no me alcanza.
+
+Pedido: "Que no se puedan pedir cosas que ya se acabaron"
+Historia: Como administrador de la cafetería, quiero que los productos agotados no aparezcan disponibles para pedir, para no recibir pedidos que no puedo entregar.
+
+Pedido: "Que el estudiante pueda repetir su último pedido con un solo clic"
+Historia:

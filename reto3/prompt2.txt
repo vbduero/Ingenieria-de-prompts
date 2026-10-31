@@ -1,0 +1,15 @@
+Escribe entre 3 y 5 criterios de aceptación en formato Dado / Cuando / Entonces para esta historia de usuario de CafeFET, el sistema de pedidos anticipados de la cafetería de la FET.
+Usa las reglas de negocio de CafeFET:
+<reglas>
+- Se reciben pedidos de lunes a sábado, de 7:00 a 18:00.
+- Máximo 5 productos por pedido.
+- Se paga con el saldo del carné; el saldo nunca puede quedar negativo.
+- Los productos agotados no se pueden pedir.
+- Si el pedido no se recoge en 30 minutos, se cancela y se devuelve el saldo.
+</reglas>
+Numera los criterios (CA1, CA2…). Cada criterio en tres líneas: Dado…, Cuando…, Entonces…
+
+<historia>
+Como estudiante, quiero poder repetir mi último pedido con un solo clic, para agilizar la realización de mis compras y ahorrar tiempo.
+
+</historia>
